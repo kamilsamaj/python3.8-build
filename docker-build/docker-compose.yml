@@ -1,0 +1,7 @@
+version: '3'
+services:
+  build-image:
+    build: .
+    volumes:
+      - $HOME/git_sources/cpython:/cpython
+    command: bash /build-python.sh
